@@ -1,1 +1,1 @@
-# Connects people with similar intrests
+# Connects people with similar interests
