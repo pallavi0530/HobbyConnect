@@ -1,1 +1,1 @@
-# PromptX
+# Connects people with similar intrests
