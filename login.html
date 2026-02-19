@@ -1,0 +1,120 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+        }
+
+        .container {
+            background: white;
+            width: 350px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            text-align: center;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            outline: none;
+            font-size: 16px;
+            transition: border 0.3s ease-in-out;
+        }
+
+        input:focus {
+            border: 2px solid #4facfe;
+            box-shadow: 0px 0px 8px rgba(79, 172, 254, 0.5);
+        }
+
+        button {
+            background: #4facfe;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background: #007BFF;
+            transform: scale(1.05);
+        }
+
+        p {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        a {
+            color: #4facfe;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="/logindetail" method="post">
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="password" placeholder="Password" name="pass" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a onclick="signup()">Sign up</a></p>
+    </div>
+</body>
+<script>
+    function signup() {
+        window.location.href = "/signup";
+    }
+</script>
+</html>

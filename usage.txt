@@ -1,0 +1,17 @@
+Use the words in search bar to get response because only few events are added to our project.
+
+1.  Arts 
+2.  Crafts 
+3.  Painting
+4.  Cooking
+5.  Food
+6.  Culinary
+7.  Photography 
+8.  Books
+9.  Reading
+10. Literature
+11. Yoga
+12. Fitness 
+13. Health
+14. Cricket
+15. Music 
